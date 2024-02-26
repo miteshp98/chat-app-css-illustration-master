@@ -114,7 +114,7 @@ body::before {
 body::after {
   content: "";
   width: 550px;
-  height: 80%;
+  height: 85%;
   background: linear-gradient(
     180deg,
     hsla(293, 100%, 63%, 1) 0%,
@@ -472,15 +472,20 @@ Media Queries
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
   body::before {
     left: -180px;
-    height: 60%;
+    height: 55%;
     width: 450px;
   }
 
   body::after {
     right: -200px;
-    height: 60%;
+    height: 55%;
+    bottom: 0px;
   }
 
   .chat-app-container {
@@ -495,7 +500,7 @@ Media Queries
   .mobile-device {
     transform: scale(0.7);
     left: 0px;
-    position: static;
+    position: relative;
     grid-area: Phone-cont;
     justify-self: center;
     margin-left: 0;
@@ -518,22 +523,33 @@ Media Queries
 @media screen and (max-width: 500px) {
   body::before {
     left: -180px;
-    height: 60%;
+    height: 55%;
     width: 380px;
   }
 
   body::after {
     right: -260px;
-    height: 50%;
+    height: 60%;
+    bottom: -150px;
+  }
+
+  .chat-app-section {
+    height: auto;
   }
 
   .mobile-device {
-    transform: scale(0.75);
+    transform: scale(0.8);
+  }
+
+  .chat-app-detail-cont > h1 {
+    font-size: 2.5em;
+    padding-inline: 10px;
   }
 
   .chat-app-detail-cont > p {
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    padding-inline: 10px;
   }
 }
 
