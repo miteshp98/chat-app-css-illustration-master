@@ -540,24 +540,40 @@ Media Queries
 /* ---
 Animation Chat 
 --- */
+
+.chat-app-detail-cont {
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .msg:nth-of-type(1) {
-  animation: scale-in-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-left 0.8s 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .msg:nth-of-type(2) {
-  animation: scale-in-left 0.8s 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-left 0.8s 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .msg:nth-of-type(5) {
-  animation: scale-in-left 0.8s 4.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-left 0.8s 5.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .price-cont:nth-of-type(2) {
-  animation: scale-in-left 0.8s 5.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-left 0.8s 6.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .price-cont:nth-of-type(3) {
-  animation: scale-in-left 0.8s 6.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-left 0.8s 7.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes scale-in-left {
@@ -574,15 +590,15 @@ Animation Chat
 }
 
 .chat-image {
-  animation: scale-in-right 0.8s 1.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-right 0.8s 2.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .sender:nth-of-type(3) {
-  animation: scale-in-right 0.8s 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-right 0.8s 3.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .sender:nth-of-type(4) {
-  animation: scale-in-right 0.8s 3.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-right 0.8s 4.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes scale-in-right {
