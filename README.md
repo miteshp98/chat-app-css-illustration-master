@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [ solution URL ](https://github.com/miteshp98/chat-app-css-illustration-master)
-- Live Site URL: [ live site ]()
+- Live Site URL: [ live site ](https://miteshp98.github.io/chat-app-css-illustration-master/)
 
 ## My process
 
